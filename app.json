@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/cook/cook",
+    "pages/headline/headline",
+    "pages/food/food",
+    "pages/message/message",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#494949",
+    "navigationBarTitleText": "学做菜",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true,
+  "tabBar": {
+    "backgroundColor": "#F5F5F5",
+    "color": "#999999",
+    "selectedColor": "#CC1004",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/cook/cook",
+        "text": "学做菜",
+        "iconPath": "images/bar/icon_bar_food_gray.png",
+        "selectedIconPath": "images/bar/icon_bar_food_black.png"
+      },
+      {
+        "pagePath": "pages/headline/headline",
+        "text": "头条",
+        "iconPath": "images/bar/icon_bar_top_gray.png",
+        "selectedIconPath": "images/bar/icon_bar_top_black.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "美食圈",
+        "iconPath": "images/bar/icon_bar_circle_gray.png",
+        "selectedIconPath": "images/bar/icon_bar_circle_black.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/bar/icon_bar_news_gray.png",
+        "selectedIconPath": "images/bar/icon_bar_news_black.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/bar/icon_bar_mine_gray.png",
+        "selectedIconPath": "images/bar/icon_bar_mine_black.png"
+      }
+    ]
+  }
+}

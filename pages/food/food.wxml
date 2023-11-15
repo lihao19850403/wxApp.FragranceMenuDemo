@@ -1,0 +1,43 @@
+<!--pages/food/food.wxml-->
+
+<view class="content">
+  <view class="loginTitle">
+    <view class="{{currentTab == 0 ? 'select' : 'default'}}" data-current="0" bindtap="switchNav">账号密码登录</view>
+    <view class="{{currentTab == 1 ? 'select' : 'default'}}" data-current="1" bindtap="switchNav">手机快捷登录</view>
+  </view>
+
+  <view class="hr"></view>
+
+  <swiper current="{{currentTab}}" style="height:{{windowHeight}}px;" bindchange="onSwiperChanged">
+    <swiper-item>
+      <view style="margin-top:10px;border:1px solid #CCCCCC;width:100%;">我是用来进行账号密码登录区域</view>
+      <view class="hr"></view>
+      <!-- 基础内容组件。 -->
+      <view class="group">
+        <block wx:for="{{iconSize}}" wx:key="">
+          <icon type="success" size="{{item}}"></icon>
+        </block>
+      </view>
+      <view class="hr"></view>
+      <view class="group">
+        <block wx:for="{{iconType}}" wx:key="">
+          <icon type="{{item}}" size="45"></icon>
+        </block>
+      </view>
+      <view class="hr"></view>
+      <view class="group">
+        <block wx:for="{{iconColor}}" wx:key="">
+          <icon type="success" size="45" color="{{item}}"></icon>
+        </block>
+      </view>
+      <view class="hr"></view>
+      <progress percent="20" show-info="true"></progress>
+      <progress percent="40" stroke-width="12"></progress>
+      <progress percent="60" color="pink"></progress>
+      <progress percent="80" active="true"></progress>
+    </swiper-item>
+    <swiper-item>
+      <view style="margin-top:10px;border:1px solid #CCCCCC;width:100%;">我是用来进行手机快捷登录区域</view>
+    </swiper-item>
+  </swiper>
+</view>

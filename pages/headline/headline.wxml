@@ -1,0 +1,19 @@
+<!--pages/headline/headline.wxml-->
+<!-- 横向滚动视图。 -->
+<view class="section">
+  <view class="section_title">新闻频道横向滚动</view>
+  <scroll-view scroll-x="true" style="width:100%;">
+    <view style="display:flex;flex-direction:row">
+      <block wx:for="{{scroll_view_data}}" wx:key="">
+        <text style="margin-right:10px;">{{item}}</text>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="hr2"></view>
+
+<import src="../../templates/news_template"/>
+<view class="list">
+  <template is="top_news" data="{{array}}"/>
+</view>
